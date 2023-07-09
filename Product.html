@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>S.R.AGROIMPEX PVT LTD (FORMLY S.R. OVERSEAS)</title>
+  <link rel="stylesheet" href="product.css">
+  
+</head>
+
+<body>
+  <!-- Menu -->
+  <div class="menu">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Product.html">Product</a></li>
+      <li><a href="plant.html">Plant</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner-bg"></div>
+    <div class="banner-content">
+      <H1 style="margin: 0;">PRODUCT</H1>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <h1>WE OFFER A QUALITY RANGE OF INDIAN BASMATI & NON-BASMATI RICE</h1>
+    <p>With features of purity, healthy nature, rich flavor & soothing aroma. Our hygienically processed Basmati Rice & Non-Basmati Rice is widely appreciated in the global market for their high nutritional value. Further, our quality-approved range of rice is best-known for its natural flavor, great taste, and soothing aroma.</p>
+
+    <div class="container">
+      <div class="row" onclick="openModal('r1.jpg')">
+        <img src="r1.jpg" alt="Image 1">
+        <h2>Steamed Basmati Rice</h2>
+        <p>Grade - Pusa Basmati<br>Colour - Light Golden<br>Average Length - 7.80mm - Sortex 100%</p>
+      </div>
+      <div class="row" onclick="openModal('r2.jpg')">
+        <img src="r2.jpg" alt="Image 2">
+        <h2>Sella/Parboiled Basmati Rice</h2>
+        <p>Grade - Pusa Basmati<br>Colour - Creamy, White & Light Yellowish<br>Average Length - 7.80mm - Sortex 100%</p>
+      </div>
+      <div class="row" onclick="openModal('r3.jpg')">
+        <img src="r3.jpg" alt="Image 3">
+        <h2>Sella/Parboiled Gold Basmati Rice</h2>
+        <p>Grade - Pr 11<br>Colour - Creamy & White<br>Average Length - 6.90mm - Sortex 100%</p>
+      </div>
+      <div class="row" onclick="openModal('r4.jpg')">
+        <img src="r4.jpg" alt="Image 4">
+        <h2>Sella Parboiled</h2>
+        <p>Grade - Pusa Basmati<br>Colour - Light Golden<br>Average Length - 7.80mm - Sortex 100%</p>
+      </div>
+      <div class="row" onclick="openModal('r5.jpg')">
+        <img src="r5.jpg" alt="Image 5">
+        <h2>Pusa Basmati Rice</h2>
+        <p>Grade - Pusa Basmati<br>Colour - Creamy, White &Light Yellowish<br>Average Length - 7.80mm - Sortex 100%</p>
+      </div>
+      <div class="row" onclick="openModal('r6.jpg')">
+        <img src="r6.jpg" alt="Image 6">
+        <h2>Steamed Long Grain Rice</h2>
+        <p>Grade - Pr 11<br>Colour - Creamy & White<br>Average Length - 6.90mm - Sortex 100%</p>
+      </div>
+      <div class="row" onclick="openModal('r7.jpg')">
+        <img src="r7.jpg" alt="Image 7">
+        <h2>Sella/Parboiled Long Grain Rice</h2>
+        <p>Grade - Pr11<br>Colour - Creamy White<br>Average Length - 6.90mm - Sortex 100%</p>
+      </div>
+      <div class="row" onclick="openModal('r8.jpg')">
+        <img src="r8.jpg" alt="Image 8">
+        <h2>Brown Rice</h2>
+        <p>Grade - 1121 Traditional Basmati<br>Colour - Brown</p>
+      </div>
+      <div class="row" onclick="openModal('r9.jpg')">
+        <img src="r9.jpg" alt="Image 9">
+        <h2>Steamed Rice</h2>
+        <p>Grade - Sona Mansuri<br>Colour - Light Yellowish<br>Sortex - 100%</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <img id="modal-image" src="" alt="">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Product.html">Products</a>
+    <a href="plant.html">Plant</a>
+    <a href="contact.html">Contact</a>
+  </footer>
+
+  <script>
+    function openModal(imagePath) {
+      var modal = document.querySelector('.modal');
+      var modalImage = document.getElementById('modal-image');
+      modalImage.src = imagePath;
+      modal.style.display = 'block';
+    }
+
+    function closeModal() {
+      var modal = document.querySelector('.modal');
+      modal.style.display = 'none';
+    }
+
+    function revealRows() {
+      var rows = document.querySelectorAll('.row');
+      rows.forEach(function(row) {
+        if (isElementInViewport(row)) {
+          row.style.transform = 'translateX(0)';
+          row.style.opacity = 1;
+        }
+      });
+    }
+
+    function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.left >= 0 &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      );
+    }
+
+    window.addEventListener('scroll', revealRows);
+    window.addEventListener('load', revealRows);
+  </script>
+</body>
+
+</html>
+
+
+  

@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+   
+   
+   
+   
+   .menu {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            
+        }
+        
+        .menu ul li {
+            display: inline-block;
+        }
+        
+        .menu ul li a {
+            display: block;
+            padding: 10px 100px;
+            text-decoration: none;
+          color:white;
+          
+            
+        }
+        
+        .menu ul li a:hover {
+            background-color: white;
+        }
+        .menu-bg {
+      position: absolute;
+      top: 9;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('a5.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .menu-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 24px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 1s ease;
+      z-index: 1; /* Set a higher z-index to ensure it appears above the menu */
+    }
+    .menu:hover .menu-content {
+      opacity: 1;
+    }
+    
+    body {
+      background-image: url("a5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0; /* Add margin 0 to remove default body margin */
+    }
+        
+          .photo-container {
+      display: flex;
+    }
+    .accredations h1{color: brown;}
+
+    
+    .photo-container img {
+      width: 25%;
+      height: auto;
+    }
+    .button {
+      background-color: white;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+    footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      margin: 100px;
+      text-decoration: none;
+      color: wheat;
+    }
+    footer a:hover{
+        margin: 100px;
+        background-color: white;
+        color: black;
+    }
+.para {background-color: white;padding: 40px;}
+.product{background-color: white;padding: 40px;}
+.accredations{background-color: white; padding: 50px;}
+.overseas{margin: center; background-color: white;padding: 50px;}
+
+    
