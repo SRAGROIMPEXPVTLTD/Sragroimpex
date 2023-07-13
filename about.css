@@ -66,18 +66,19 @@
       display: flex;
       align-items: center;
       background-color: white;
-      padding: 40px;
+      padding: 30px;
     }
     
     .image1 {
       flex: 1;
       
     }
-.image1 img{height:500px;}
+.image1 img{height:300px;}
     
     .content1 {
       flex: 2;
       padding: 20px;
+            font-size:20px;
     }
     
     .content1 h2 {
@@ -88,7 +89,7 @@
       display: flex;
       align-items: center;
       background-color: white;
-      padding: 40px;
+      padding: 30px;
     }
     
     .image2 {
@@ -96,9 +97,10 @@
       order: 2;
       /* Change the order */
       text-align: right;
+            padding:100px;
       /* Align the image to the right */
     }
-.image2 img{height: 500px;}
+.image2 img{height: 300px;}
     
     .content2 {
       flex: 2;
@@ -115,7 +117,7 @@
       display: flex;
       align-items: center;
       background-color: white;
-      padding: 40px;
+      padding: 30px;
     }
     
     .image3 {
@@ -135,7 +137,7 @@
       display: flex;
       align-items: center;
       background-color: white;
-      padding: 40px;
+      padding: 30px;
     }
     
     .image4 {
