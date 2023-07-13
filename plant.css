@@ -58,23 +58,27 @@
             background-image: url("main.jpg");
             background-size: cover;
             background-position: center;
+            background-repeat:norepeat;
+                 margin:0;
           }
 
      .container {
       display: flex;
       align-items: center;
-      background-color: white;;
+      background-color: white;
+              padding:40px;
     }
 
     .image img {
       flex: 1;
-      
+      height:200px;
       
     }
 
     .content {
       flex: 5;
       padding: 20px;
+             font-size:24px;
     }
     .content h2 {
       margin-top: 0;
@@ -90,10 +94,12 @@
     .image1 {
       flex: 1;
     }
+.image1 img{ height:150px;}
 
     .content1 {
       flex: 5;
       padding: 20px;
+             font-size:24px;
     }
     .content1 h2 {
       margin-top: 0;
@@ -103,18 +109,19 @@
       display: flex;
       align-items: center;
       background-color: white;
-      padding: 20px;
+      padding: 40px;
     }
 
     .image2 {
       flex: 1;
       
     }
-.image2 img{height:200px}
+.image2 img{height:200px;}
 
     .content2 {
       flex: 5;
       padding: 20px;
+             font-size:24px;
     }
     .content2 h2 {
       margin-top: 0;
@@ -124,16 +131,18 @@
       display: flex;
       align-items: center;
       background-color: white;
-      padding: 20px;
+      padding: 40px;
     }
 
     .image3 {
       flex: 1;
     }
+.image3 img{height:200px;}
 
     .content3 {
       flex: 5;
       padding: 20px;
+             font-size:24px;
     }
     .content3 h2 {
       margin-top: 0;
@@ -154,6 +163,7 @@
     .content4 {
       flex: 5;
       padding: 20px;
+             font-size:24px;
     }
     .content4 h2 {
       margin-top: 0;
