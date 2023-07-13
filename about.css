@@ -78,7 +78,7 @@
     .content1 {
       flex: 2;
       padding: 20px;
-            font-size:20px;
+            font-size:24px;
     }
     
     .content1 h2 {
@@ -100,12 +100,13 @@
             padding:100px;
       /* Align the image to the right */
     }
-.image2 img{height: 300px;}
+.image2 img{height: 250px;}
     
     .content2 {
       flex: 2;
       padding: 20px;
       order: 1;
+            font-size:24px;
       /* Change the order */
     }
     
@@ -127,6 +128,7 @@
     .content3 {
       flex: 2;
       padding: 20px;
+            font-size:24px;
     }
     
     .content3 h2 {
@@ -140,18 +142,13 @@
       padding: 30px;
     }
     
-    .image4 {
-      flex: 1;
-      order: 2;
-      /* Change the order */
-      text-align: right;
-      /* Align the image to the right */
-    }
+    
     
     .content4 {
       flex: 2;
       padding: 20px;
       order: 1;
+            font-size:24px;
       /* Change the order */
     }
     
